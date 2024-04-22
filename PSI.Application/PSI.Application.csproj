@@ -26,8 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PSI.Database\PSI.Infrastructure.csproj" />
-    <ProjectReference Include="..\PSI.Infrastructure\PSI.Domain.csproj" />
+    <ProjectReference Include="..\PSI.Domain\PSI.Domain.csproj" />
+    <ProjectReference Include="..\PSI.Infrastructure\PSI.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
