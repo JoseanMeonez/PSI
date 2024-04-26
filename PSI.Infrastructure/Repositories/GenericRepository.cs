@@ -96,4 +96,11 @@ public class GenericRepository<T, TId> : IGenericRepository<T, TId>
 
 		return true;
 	}
+
+	/// <inheritdoc />
+	public async Task<int> SaveChangesAsync(CancellationToken cancellationToken)
+	{
+		int result = await _context.SaveChangesAsync(cancellationToken);
+		return result;
+	}
 }

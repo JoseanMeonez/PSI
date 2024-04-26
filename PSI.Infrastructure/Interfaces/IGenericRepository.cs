@@ -65,4 +65,11 @@ public interface IGenericRepository<T, TId>
 	/// <param name="id">The unique identifier of the entity.</param>
 	/// <returns>A task that represents the asynchronous operation, returning true if the entity was deleted; otherwise, false.</returns>
 	Task<bool> DeleteAsync(TId id);
+
+	/// <summary>
+	/// Asynchronously saves all changes made in this context to the underlying database.
+	/// </summary>
+	/// <param name="cancellationToken">
+	/// <returns>A task that represents the asynchronous operation, the result of the task contains the number of status entries written to the underlying database.</returns>
+	Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }
