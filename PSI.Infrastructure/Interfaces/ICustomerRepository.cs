@@ -2,7 +2,7 @@
 
 namespace PSI.Infrastructure.Interfaces;
 
-public interface ICustomerRepository
+public interface ICustomerRepository : IGenericRepository<Customer, int>
 {
 	/// <summary>
 	/// Gets the customer with the specified identifier and its related references eagerly loaded.
