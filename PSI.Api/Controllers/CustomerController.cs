@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PSI.Application.Features.Customer.Queries.GetById;
+using PSI.Application.Features.CustomerFeature.Queries.GetById;
 
 namespace PSI.Api.Controllers;
 

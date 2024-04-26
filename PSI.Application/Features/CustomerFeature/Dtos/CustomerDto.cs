@@ -1,4 +1,4 @@
-﻿namespace PSI.Application.Features.Customer.Dtos;
+﻿namespace PSI.Application.Features.CustomerFeature.Dtos;
 
 public class CustomerDto
 {

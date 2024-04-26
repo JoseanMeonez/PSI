@@ -1,10 +1,10 @@
 ﻿using MapsterMapper;
 using MediatR;
-using PSI.Application.Features.Customer.Dtos;
+using PSI.Application.Features.CustomerFeature.Dtos;
 using PSI.Application.Wrappers;
 using PSI.Infrastructure.Interfaces;
 
-namespace PSI.Application.Features.Customer.Queries.GetById;
+namespace PSI.Application.Features.CustomerFeature.Queries.GetById;
 
 public record GetCustomerByIdQuery(int Id) : IRequest<Response<CustomerDto>>;
 

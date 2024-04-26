@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <Folder Include="Exceptions\" />
-    <Folder Include="Features\Customer\Commands\" />
+    <Folder Include="Features\CustomerFeature\Commands\" />
   </ItemGroup>
 
   <ItemGroup>

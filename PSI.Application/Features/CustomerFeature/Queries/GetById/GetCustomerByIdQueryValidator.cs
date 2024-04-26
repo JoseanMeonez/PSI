@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace PSI.Application.Features.Customer.Queries.GetById;
+namespace PSI.Application.Features.CustomerFeature.Queries.GetById;
 
 public class GetCustomerByIdQueryValidator : AbstractValidator<GetCustomerByIdQuery>
 {

@@ -1,8 +1,8 @@
 ﻿using MediatR;
-using PSI.Application.Features.Customer.Dtos;
+using PSI.Application.Features.CustomerFeature.Dtos;
 using PSI.Application.Wrappers;
 
-namespace PSI.Application.Features.Customer.Queries.GetById;
+namespace PSI.Application.Features.CustomerFeature.Queries.GetAll;
 
 public record GetAllCustomersQuery() : IRequest<Response<CustomerDto>>;
 
