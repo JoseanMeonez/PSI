@@ -71,5 +71,5 @@ public interface IGenericRepository<T, TId>
 	/// </summary>
 	/// <param name="cancellationToken">
 	/// <returns>A task that represents the asynchronous operation, the result of the task contains the number of status entries written to the underlying database.</returns>
-	Task<int> SaveChangesAsync(CancellationToken cancellationToken);
+	Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }
