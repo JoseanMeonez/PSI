@@ -7,9 +7,9 @@ namespace Infrastructure.Repositories;
 
 public class CustomerRepository : GenericRepository<Customer, int>, ICustomerRepository
 {
-	private readonly PsiContext _context;
+	private readonly MainContext _context;
 
-	public CustomerRepository(PsiContext context) : base(context)
+	public CustomerRepository(MainContext context) : base(context)
 	{
 		_context = context;
 	}

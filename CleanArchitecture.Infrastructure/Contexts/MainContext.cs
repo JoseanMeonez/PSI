@@ -6,13 +6,13 @@ namespace Infrastructure.Contexts;
 /// <summary>
 /// Represents the application database context.
 /// </summary>
-public partial class PsiContext : DbContext
+public partial class MainContext : DbContext
 {
 	/// <summary>
-	/// Initializes a new instance of the <see cref="PsiContext"/> class.
+	/// Initializes a new instance of the <see cref="MainContext"/> class.
 	/// </summary>
 	/// <param name="options">The database context options.</param>
-	public PsiContext(DbContextOptions<PsiContext> options) : base(options)
+	public MainContext(DbContextOptions<MainContext> options) : base(options)
 	{
 		ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
 	}
@@ -38,7 +38,7 @@ public partial class PsiContext : DbContext
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
 		OnModelCreatingPartial(modelBuilder);
-		modelBuilder.ApplyConfigurationsFromAssembly(typeof(PsiContext).Assembly);
+		modelBuilder.ApplyConfigurationsFromAssembly(typeof(MainContext).Assembly);
 	}
 
 	/// <inheritdoc />

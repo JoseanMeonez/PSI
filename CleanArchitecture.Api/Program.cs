@@ -20,7 +20,7 @@ builder.Services
 				.AllowCredentials();
 		});
 	})
-	.AddDbContext<PsiContext>(options =>
+	.AddDbContext<MainContext>(options =>
 	{
 		options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseContext"));
 	});

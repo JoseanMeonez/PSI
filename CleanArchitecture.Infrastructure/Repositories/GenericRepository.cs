@@ -10,14 +10,14 @@ namespace Infrastructure.Repositories;
 public class GenericRepository<T, TId> : IGenericRepository<T, TId>
 		where T : BaseEntity<TId>
 {
-	private readonly PsiContext _context;
+	private readonly MainContext _context;
 	private readonly DbSet<T> _entity;
 
 	/// <summary>
 	/// Initializes a new instance of the <see cref="GenericRepository"/> class.
 	/// </summary>
 	/// <param name="context">The database context.</param>
-	public GenericRepository(PsiContext context)
+	public GenericRepository(MainContext context)
 	{
 		_context = context;
 		_entity = _context.Set<T>();
