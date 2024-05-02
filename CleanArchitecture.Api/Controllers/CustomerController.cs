@@ -9,13 +9,13 @@ public class CustomerController : ControllerBase
 {
 	// GET: api/<CustomerController>
 	[HttpGet]
-	public IEnumerable<string> Get()
-		=> new string[] { "value1", "value2" };
+	public IEnumerable<string> Get() =>
+		new string[] { "value1", "value2" };
 
 	// GET api/<CustomerController>/5
-	[HttpGet("{id}")]
-	public async Task<IActionResult> Get(int id)
-		=> Ok(await Mediator.Send(new GetCustomerByIdQuery(id)));
+	[HttpGet("{id:int}")]
+	public async Task<IActionResult> Get(int id) =>
+		Ok(await Mediator.Send(new GetCustomerByIdQuery(id)));
 
 	// POST api/<CustomerController>
 	[HttpPost]
@@ -24,7 +24,7 @@ public class CustomerController : ControllerBase
 	}
 
 	// PUT api/<CustomerController>/5
-	[HttpPut("{id}")]
+	[HttpPut("{id:int}")]
 	public void Put(int id, [FromBody] string value)
 	{
 	}
