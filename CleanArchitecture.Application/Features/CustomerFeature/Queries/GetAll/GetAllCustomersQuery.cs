@@ -1,16 +1,16 @@
-﻿using Application.Features.CustomerFeature.Dtos;
+﻿using Application.Features.CustomerFeature.Common;
 using Application.Wrappers;
 using MediatR;
 
 namespace Application.Features.CustomerFeature.Queries.GetAll;
 
-public record GetAllCustomersQuery() : IRequest<Response<CustomerDto>>;
+public record GetAllCustomersQuery() : IRequest<Response<BasicCustomerResponse>>;
 
-public class GetAllCustomersQueryHandler : IRequestHandler<
+internal class GetAllCustomersQueryHandler : IRequestHandler<
 	GetAllCustomersQuery,
-	Response<CustomerDto>>
+	Response<BasicCustomerResponse>>
 {
-	public async Task<Response<CustomerDto>> Handle(
+	public async Task<Response<BasicCustomerResponse>> Handle(
 		GetAllCustomersQuery request,
 		CancellationToken cancellationToken)
 	{
