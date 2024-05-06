@@ -1,4 +1,4 @@
-﻿using Application.Features.CustomerFeature.Common;
+﻿using Application.Features.CustomerFeature.Responses;
 using Application.Wrappers;
 using Infrastructure.Interfaces;
 using MapsterMapper;
