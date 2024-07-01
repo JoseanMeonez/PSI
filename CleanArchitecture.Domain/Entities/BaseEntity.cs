@@ -4,7 +4,7 @@ public abstract class BaseEntity<TId>
 {
 	public required TId Id { get; init; }
 
-	public string CreatedBy { get; init; } = null!;
+	public required string CreatedBy { get; init; }
 
 	public DateTime CreationDate { get; init; }
 

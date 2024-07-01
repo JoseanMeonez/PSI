@@ -2,13 +2,13 @@
 
 public partial class Prospect : BaseEntity<int>
 {
-	public string Name { get; set; } = null!;
+	public required string Name { get; set; }
 
-	public string LastName { get; set; } = null!;
+	public required string LastName { get; set; }
 
 	public string? MarriedLastName { get; set; }
 
-	public string Address { get; set; } = null!;
+	public required string Address { get; set; }
 
 	public int GenderId { get; set; }
 
@@ -16,15 +16,15 @@ public partial class Prospect : BaseEntity<int>
 
 	public int IdentificationTypeId { get; set; }
 
-	public string IdentificationValue { get; set; } = null!;
+	public required string IdentificationValue { get; set; }
 
-	public string PhoneNumber { get; set; } = null!;
+	public required string PhoneNumber { get; set; }
 
-	public string PhoneNumberDesc { get; set; } = null!;
+	public required string PhoneNumberDesc { get; set; }
 
-	public string Email { get; set; } = null!;
+	public required string Email { get; set; }
 
-	public string EmailDesc { get; set; } = null!;
+	public required string EmailDesc { get; set; }
 
 	public int NeighborhoodId { get; set; }
 

@@ -2,13 +2,13 @@
 
 public partial class Customer : BaseEntity<int>
 {
-	public string Name { get; set; } = null!;
+	public required string Name { get; set; }
 
-	public string LastName { get; set; } = null!;
+	public required string LastName { get; set; }
 
 	public string? MarriedLastName { get; set; }
 
-	public string Address { get; set; } = null!;
+	public required string Address { get; set; }
 
 	public int GenderId { get; set; }
 
@@ -16,7 +16,7 @@ public partial class Customer : BaseEntity<int>
 
 	public int IdentificationTypeId { get; set; }
 
-	public string IdentificationValue { get; set; } = null!;
+	public required string IdentificationValue { get; set; }
 
 	public int NeighborhoodId { get; set; }
 
@@ -24,9 +24,9 @@ public partial class Customer : BaseEntity<int>
 
 	public virtual ICollection<Email> Emails { get; set; } = new List<Email>();
 
-	public virtual Gender Gender { get; set; } = null!;
+	public virtual Gender? Gender { get; set; }
 
-	public virtual IdentificationType IdentificationType { get; set; } = null!;
+	public virtual IdentificationType? IdentificationType { get; set; }
 
 	public virtual ICollection<PhoneNumber> PhoneNumbers { get; set; } = new List<PhoneNumber>();
 
